@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Your Academic Journey Starts Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2>Smart Start</h2>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../home/home.html" class="nav-link">
+                        <span>Home</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../mentor/mentor.php" class="nav-link">
+                        <span>Mentor</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../mentor/mentor.php" class="dropdown-item">Find Mentors</a>
+                            <a href="../mentor-dashboard/mentor-dash.html" class="dropdown-item">Mentor Dashboard</a>
+                            <a href="../mentor-comp/mentor-comp.html" class="dropdown-item">Mentor Comparison</a>
+                            <a href="../mentor-details/details.html" class="dropdown-item">Mentor Details</a>
+                            <a href="../upload courses/upload.html" class="dropdown-item">Upload page</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../find-student/student.html" class="nav-link">
+                        <span>Student</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../student-dashboard/index.html" class="dropdown-item">Student Dashboard</a>
+                            <a href="../download/download.html" class="dropdown-item">Download Courses</a>
+                            <a href="../student/student.html" class="dropdown-item">Find student</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../contact-us/contact.php" class="nav-link">
+                        <span>Contact Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">Live Chat</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../about-us/About-us.html" class="nav-link active">
+                        <span>About Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../user/profile-1.php" class="nav-link">
+                        <span>Profile</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../payment/payment.php" class="dropdown-item">Payment</a>
+                            <a href="../login-choices/index.html" class="dropdown-item">Log in</a>
+                            <a href="../signup/signup.php" class="dropdown-item">Sign up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-item">
+                    <a href="../home/home.html" class="mobile-link">Home</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Mentor<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../mentor/mentor.php" class="mobile-sublink">Find Mentors</a>
+                        <a href="../mentor-dashboard/" class="mobile-sublink">Mentor Dashboard</a>
+                        <a href="../mentor-comp/mentor-comp.html" class="mobile-sublink">Mentor Comparison</a>
+                        <a href="../mentor-details/details.html" class="mobile-sublink">Mentor Details</a>
+                        <a href="../upload courses/upload.html" class="mobile-sublink">Upload Page</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Student<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../student-dashboard/index.html" class="mobile-sublink">Student Dashboard</a>
+                        <a href="../upload courses/upload.html" class="mobile-sublink">Upload Courses</a>
+                        <a href="../student/find_student.html" class="mobile-sublink">Find Student</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Contact Us<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../contact-us/contact.php" class="mobile-sublink">Get in Touch</a>
+                        <a href="#" class="mobile-sublink">Live Chat</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="../about-us/About-us.html" class="mobile-link">About Us</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Profile<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../payment/payment.php" class="mobile-sublink">Payment</a>
+                        <a href="../login-choices/index.html" class="mobile-sublink">Log in</a>
+                        <a href="../signup/signup.php" class="mobile-sublink">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Floating Elements -->
+        <div class="floating-element">📚</div>
+        <div class="floating-element">🎓</div>
+        <div class="floating-element">💡</div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Your Academic Journey</h1>
+            <p class="hero-subtitle">Empowering students with the tools, resources, and community they need to succeed in their educational pursuits.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+                <button class="btn btn-accent" onclick="showNotification('Welcome! 🎉')">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About StudentPortal</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>StudentPortal is your comprehensive academic companion, designed to streamline your educational experience and maximize your potential. We understand the challenges students face in today's fast-paced academic environment.</p>
+                <br>
+                <p>Our platform combines cutting-edge technology with proven educational methodologies to create an ecosystem where students can thrive, collaborate, and achieve their academic goals with confidence.</p>
+                <br>
+                <button class="btn btn-success" onclick="animateStats()">View Our Impact</button>
+            </div>
+            <div class="about-stats" id="stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-label">Active Students</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Partner Universities</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="95">0</span>
+                    <span class="stat-label">Success Rate %</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="24">0</span>
+                    <span class="stat-label">Support Hours</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">📖</div>
+                <h3 class="service-title">Study Resources</h3>
+                <p class="service-description">Access comprehensive study materials, practice tests, and interactive learning modules tailored to your curriculum and learning style.</p>
+            </div>
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">👥</div>
+                <h3 class="service-title">Peer Collaboration</h3>
+                <p class="service-description">Connect with fellow students, form study groups, and participate in collaborative projects to enhance your learning experience.</p>
+            </div>
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">🎯</div>
+                <h3 class="service-title">Goal Tracking</h3>
+                <p class="service-description">Set academic goals, track your progress, and receive personalized recommendations to stay on track with your educational objectives.</p>
+            </div>
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">💼</div>
+                <h3 class="service-title">Career Guidance</h3>
+                <p class="service-description">Get expert advice on career paths, internship opportunities, and professional development to prepare for your future.</p>
+            </div>
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">🏆</div>
+                <h3 class="service-title">Achievement System</h3>
+                <p class="service-description">Earn badges, certificates, and recognition for your academic achievements and milestones throughout your journey.</p>
+            </div>
+            <div class="service-card" onclick="highlightCard(this)">
+                <div class="service-icon">📱</div>
+                <h3 class="service-title">Mobile Learning</h3>
+                <p class="service-description">Learn on-the-go with our mobile-optimized platform, featuring offline capabilities and synchronized progress across devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section">
+            <h2 class="section-title">What Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">StudentPortal transformed my study habits completely. The collaborative features helped me connect with peers and the goal tracking kept me motivated throughout my degree.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AS</div>
+                        <div class="author-info">
+                            <h4>Alex Smith</h4>
+                            <p>Computer Science Major</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The career guidance feature was invaluable. I landed my dream internship thanks to the personalized advice and networking opportunities provided by the platform.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Maria Johnson</h4>
+                            <p>Business Administration</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">As a working student, the mobile learning feature was a game-changer. I could study during commutes and breaks, making the most of every moment.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DL</div>
+                        <div class="author-info">
+                            <h4>David Lee</h4>
+                            <p>Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Ready to start your academic journey with us? Reach out to our team for any questions, support, or feedback. We're here to help you succeed!</p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong><br> support@studentportal.edu
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Phone</strong><br> +1 (555) 123-4567
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>Address</strong><br> 123 Education Ave, Learning City, LC 12345
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div id="formMessage" class="message"></div>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitBtn">
+                    <span id="submitText">Send Message</span>
+                    <span id="submitLoader" class="loading" style="display: none;"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Support</a>
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StudentPortal. All rights reserved. Empowering students worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scirpt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorHub - Professional Mentoring Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2>Smart Start</h2>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../home/home.html" class="nav-link">
+                        <span>Home</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../mentor/mentor.php" class="nav-link">
+                        <span>Mentor</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../mentor/mentor.php" class="dropdown-item">Find Mentors</a>
+                            <a href="../mentor-dashboard/mentor-dash.html" class="dropdown-item">Mentor Dashboard</a>
+                            <a href="../mentor-comp/mentor-comp.html" class="dropdown-item">Mentor Comparison</a>
+                            <a href="../mentor-details/details.html" class="dropdown-item">Mentor Details</a>
+                            <a href="../upload courses/upload.html" class="dropdown-item">Upload page</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../find-student/student.html" class="nav-link">
+                        <span>Student</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../student-dashboard/index.html" class="dropdown-item">Student Dashboard</a>
+                            <a href="../download/download.html" class="dropdown-item">Download Courses</a>
+                            <a href="../student/student.html" class="dropdown-item">Find student</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../contact-us/contact.php" class="nav-link">
+                        <span>Contact Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item">Live Chat</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../about-us/About-us.html" class="nav-link active">
+                        <span>About Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../user/profile-1.php" class="nav-link">
+                        <span>Profile</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../payment/payment.php" class="dropdown-item">Payment</a>
+                            <a href="../login-choices/index.html" class="dropdown-item">Log in</a>
+                            <a href="../signup/signup.php" class="dropdown-item">Sign up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-item">
+                    <a href="../home/home.html" class="mobile-link">Home</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Mentor<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../mentor/mentor.php" class="mobile-sublink">Find Mentors</a>
+                        <a href="../mentor-dashboard/" class="mobile-sublink">Mentor Dashboard</a>
+                        <a href="../mentor-comp/mentor-comp.html" class="mobile-sublink">Mentor Comparison</a>
+                        <a href="../mentor-details/details.html" class="mobile-sublink">Mentor Details</a>
+                        <a href="../upload courses/upload.html" class="mobile-sublink">Upload Page</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Student<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../student-dashboard/index.html" class="mobile-sublink">Student Dashboard</a>
+                        <a href="../upload courses/upload.html" class="mobile-sublink">Upload Courses</a>
+                        <a href="../student/find_student.html" class="mobile-sublink">Find Student</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Contact Us<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../contact-us/contact.php" class="mobile-sublink">Get in Touch</a>
+                        <a href="#" class="mobile-sublink">Live Chat</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="../about-us/About-us.html" class="mobile-link">About Us</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Profile<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../payment/payment.php" class="mobile-sublink">Payment</a>
+                        <a href="../login-choices/index.html" class="mobile-sublink">Log in</a>
+                        <a href="../signup/signup.php" class="mobile-sublink">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title floating">Transform Your Career with Expert Mentoring</h1>
+            <p class="hero-subtitle">Connect with industry leaders and accelerate your professional growth through personalized mentorship programs.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-accent">Get Started Today</a>
+                <a href="#services" class="btn btn-outline">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="reveal">
+            <h2 class="section-title">About MentorHub</h2>
+            <p class="section-subtitle">Empowering professionals through meaningful mentorship connections</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>At MentorHub, we believe that everyone deserves access to quality mentorship. Our platform connects ambitious professionals with experienced industry leaders who are passionate about sharing their knowledge and expertise.</p>
+                    <br>
+                    <p>With over 5 years of experience in professional development, we've helped thousands of individuals achieve their career goals through structured mentorship programs, skill development workshops, and personalized coaching sessions.</p>
+                    <br>
+                    <a href="#services" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <span>Professional Mentoring Illustration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="reveal">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive mentorship solutions tailored to your needs</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title">Career Coaching</h3>
+                    <p class="service-description">One-on-one sessions focused on career planning, goal setting, and professional development strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3 class="service-title">Industry Mentorship</h3>
+                    <p class="service-description">Connect with experienced professionals in your field for industry-specific guidance and insights.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3 class="service-title">Skill Development</h3>
+                    <p class="service-description">Structured programs to help you develop technical and soft skills essential for career advancement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌟</div>
+                    <h3 class="service-title">Leadership Training</h3>
+                    <p class="service-description">Comprehensive leadership development programs for emerging and established leaders.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3 class="service-title">Performance Optimization</h3>
+                    <p class="service-description">Personalized strategies to improve workplace performance and achieve professional excellence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title">Networking Support</h3>
+                    <p class="service-description">Build meaningful professional relationships and expand your network within your industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="reveal">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Success stories from professionals who transformed their careers</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"MentorHub completely transformed my career trajectory. The personalized guidance I received helped me land my dream job and develop the confidence I needed to excel in my role."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Software Engineer at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The leadership training program was exceptional. I gained valuable insights that helped me transition from a team member to a successful team leader within six months."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DJ</div>
+                        <div class="author-info">
+                            <h4>David Johnson</h4>
+                            <p>Project Manager at InnovateCo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The networking support and industry connections I made through MentorHub opened doors I never thought possible. Highly recommend their services!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ER</div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Marketing Director at BrandForward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your mentorship journey? Let's connect!</p>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@mentorhub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>123 Business Ave, Suite 100<br>Professional City, PC 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#testimonials" class="footer-link">Testimonials</a>
+                <a href="#contact" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+            <p class="footer-text">&copy; 2024 MentorHub. All rights reserved. Empowering careers through mentorship.</p>
+        </div>
+    </footer>
+
+    <script src="scirpt.js"></script>
+</body>
+
+</html>

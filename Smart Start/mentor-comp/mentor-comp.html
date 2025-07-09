@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Mentors - Smart Start</title>
+    <link rel="stylesheet" href="mentor-comp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Compare mentors side-by-side to make informed decisions on Smart Start platform">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h2>Smart Start</h2>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../home/home.html" class="nav-link">
+                        <span>Home</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../mentor/mentor.php" class="nav-link">
+                        <span>Mentor</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../mentor/mentor.php" class="dropdown-item">Find Mentors</a>
+                            <a href="../mentor-dashboard/" class="dropdown-item">Mentor Dashboard</a>
+                            <a href="../mentor-comp/mentor-comp.html" class="dropdown-item">Mentor Comparison</a>
+                            <a href="../mentor-details/details.html" class="dropdown-item">Mentor Details</a>
+                            <a href="../upload-courses/upload.html" class="dropdown-item">Upload Courses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../find-student/student.html" class="nav-link">
+                        <span>Student</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../student-dashboard/index.html" class="dropdown-item">Student Dashboard</a>
+                            <a href="../download/download.html" class="dropdown-item">Download Courses</a>
+                            <a href="../student/student.html" class="dropdown-item">Find Student</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../contact-us/contact.php" class="nav-link">
+                        <span>Contact Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../contact-us/contact.php" class="dropdown-item">Get in Touch</a>
+                            <a href="#" class="dropdown-item">Live Chat</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="../about-us/About-us.html" class="nav-link">
+                        <span>About Us</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="../user/profile-1.php" class="nav-link">
+                        <span>Profile</span>
+                        <div class="nav-indicator"></div>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <a href="../user/profile-1.php" class="dropdown-item">Profile</a>
+                            <a href="../payment/payment.php" class="dropdown-item">Payment</a>
+                            <a href="../login-choices/index.html" class="dropdown-item">Log in</a>
+                            <a href="../signup/signup.php" class="dropdown-item">Sign up</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-item">
+                    <a href="../home/home.html" class="mobile-link">Home</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Mentor<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../mentor/mentor.php" class="mobile-sublink">Find Mentors</a>
+                        <a href="../mentor-dashboard/" class="mobile-sublink">Mentor Dashboard</a>
+                        <a href="../mentor-comp/mentor-comp.html" class="mobile-sublink">Mentor Comparison</a>
+                        <a href="../mentor-details/details.html" class="mobile-sublink">Mentor Details</a>
+                        <a href="../upload-courses/upload.html" class="mobile-sublink">Upload Courses</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Student<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../student-dashboard/index.html" class="mobile-sublink">Student Dashboard</a>
+                        <a href="../download/download.html" class="mobile-sublink">Download Courses</a>
+                        <a href="../student/student.html" class="mobile-sublink">Find Student</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Contact Us<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../contact-us/contact.php" class="mobile-sublink">Get in Touch</a>
+                        <a href="#" class="mobile-sublink">Live Chat</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="../about-us/About-us.html" class="mobile-link">About Us</a>
+                </div>
+                <div class="mobile-menu-item">
+                    <a href="#" class="mobile-link mobile-dropdown-toggle">
+                        Profile<span class="mobile-arrow">▼</span>
+                    </a>
+                    <div class="mobile-submenu">
+                        <a href="../user/profile-1.php" class="mobile-sublink">Profile</a>
+                        <a href="../payment/payment.php" class="mobile-sublink">Payment</a>
+                        <a href="../login-choices/index.html" class="mobile-sublink">Log in</a>
+                        <a href="../signup/signup.php" class="mobile-sublink">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Compare Your <span class="gradient-text">Favorite</span> Mentors
+                    </h1>
+                    <p class="hero-subtitle">Make informed decisions by comparing mentors side-by-side</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-accent" id="showFavoritesBtn">
+                            <i class="fas fa-heart"></i>
+                            View My Favorites (<span id="favoritesCount">3</span>)
+                        </button>
+                        <button class="btn btn-outline" id="clearComparisonBtn">
+                            <i class="fas fa-trash"></i>
+                            Clear Comparison
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Favorites Panel -->
+            <div class="favorites-panel" id="favoritesPanel">
+                <div class="panel-header">
+                    <h3>
+                        <i class="fas fa-heart pulse"></i> My Favorite Mentors
+                    </h3>
+                    <button class="close-panel" id="closeFavoritesBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="favorites-grid" id="favoritesGrid">
+                    <!-- Favorites will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Comparison Section -->
+            <div class="comparison-section">
+                <div class="section-header">
+                    <h2>Mentor Comparison</h2>
+                    <div class="comparison-controls">
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="cards">
+                                <i class="fas fa-th-large"></i>
+                                Cards
+                            </button>
+                            <button class="toggle-btn" data-view="table">
+                                <i class="fas fa-table"></i>
+                                Table
+                            </button>
+                        </div>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="rating">Sort by Rating</option>
+                            <option value="price">Sort by Price</option>
+                            <option value="experience">Sort by Experience</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Cards View -->
+                <div class="comparison-cards" id="cardsView">
+                    <!-- Mentor cards will be populated by JavaScript -->
+                </div>
+
+                <!-- Table View -->
+                <div class="comparison-table" id="tableView" style="display: none;">
+                    <div class="table-container">
+                        <table id="comparisonTable">
+                            <!-- Table will be populated by JavaScript -->
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendation Section -->
+            <div class="recommendation-section">
+                <div class="recommendation-card">
+                    <div class="recommendation-content">
+                        <div class="recommendation-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="recommendation-text">
+                            <h3>Need Help Deciding?</h3>
+                            <p>Based on your favorites and comparison history, we recommend starting with Sarah Chen for product management guidance.</p>
+                        </div>
+                        <button class="btn btn-accent" id="aiRecommendationBtn">
+                            <i class="fas fa-robot"></i>
+                            Get AI Recommendation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Smart Start</h3>
+                    </div>
+                    <p>Connecting ambitious learners with world-class mentors.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="../mentor/mentor.php">Find Mentors</a></li>
+                        <li><a href="#become-mentor">Become a Mentor</a></li>
+                        <li><a href="#success-stories">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="../contact-us/contact.html">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Smart Start. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script src="mentor-comp.js"></script>
+</body>
+
+</html>
